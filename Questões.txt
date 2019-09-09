@@ -1,0 +1,25 @@
+1 - Crie um formulário para solicitação de passaporte com os seguintes dados:
+- Nome completo: (Apenas letras. Pelo menos 10 caracteres).
+- Endereço: (Alfanumerico).
+- Cidade: (Apenas Letras).
+- UF: (Apenas 2 letras).
+- Telefone residencial: ((99)9999-9999).
+- Celular: ((99)9-9999-9999).
+- Email: (Exemplo@site.com).
+- Profissão: (Letras).
+- RG: (Apenas números. Pelo menos 6 digítos).
+- CNH: (99999999999).
+- CPF: (999.999.999-99).
+- Titulo de eleitor: (9999 - 9999 - 9999).
+- Tem passaporte antigo? (Radio com sim ou não).
+- Número do passaporte: (AA999999).
+
+Motivo da solicitação: Criar um select com 3 opções:
+1 - Trabalho
+2 - Turismo
+3 - Estudo
+4 - Sair do país
+OBS: Não admitir valor diferente destes!
+
+2 - Valide e exiba mensagens de erro, quando necessário, usando o plugin MaskJs.
+3 - Após validar, envie os dados para o endereço especificado em action.

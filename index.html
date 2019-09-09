@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="cssFormulario.css">
+    <title>Trabalho Formulário</title>
+
+</head>
+<body>
+
+    <div class="form" id="area">
+        <h1>Formulário</h1>
+
+        <form name="passaporteform" action="index2.html">
+            
+            <label name="nome">Nome Completo:</label>
+            <input id="nome" type="text" minlength="10"/><br>
+
+            <label for="endereco">Endereço:</label>
+            <input id="end" type="text"/><br>
+
+            <label for="cidade">Cidade:</label>
+            <input id="cid" type="text"/><br>
+
+            <label for="uf">UF:</label>
+            <input id="uf" type="text"/><br>
+
+            <label for="telefone">Telefone:</label>
+            <input id="tel" type="text"/><br>
+
+            <label for="celular">Celular:</label>
+            <input id="cel" type="text"/><br>
+
+            <label for="email">E-mail:</label>
+            <input id="emai" type="email"/><br>
+
+            <label for="profissao">Profissão:</label>
+            <input id="prof" type="text"/><br>
+
+            <label>Motivo da Solicitação:</label>
+            <select name="motivosolici" id="select">
+                <option value="trabalho">Trabalho</option>
+                <option value="turismo">Turismo</option>
+                <option value="estudo">Estudo</option>
+                <option value="sairdopais">Sair do Pais</option>
+            </select> <br>
+
+            <label for="rg">RG:</label>
+            <input id="rg" type="text" maxlength="6"/><br>
+
+            <label for="cnh">CNH:</label>
+            <input id="cnh" type="text"/><br>
+
+            <label for="cpf">CPF:</label>
+            <input id="cpf" type="text"/><br>
+
+            <label for="titulo">Titulo do Eleitor:</label>
+            <input id="titu" type="text"/><br>
+
+            <label for="?">Possui passaporte antigo?</label><br>
+
+            <label for="sim">Sim</label>
+            <input id="s" name="tempasse" onclick="funcSim()" type="radio"/>
+
+            <label for="nao">Não</label>
+            <input id="n" name="tempasse" onclick="funcNao()" type="radio"/><br>
+
+    
+            <div id="numpassaporte" style="display: none">
+                <label for="nome">Número do Passaporte:</label>
+                <input id="numpass" type="text"/>
+            </div>
+
+
+            <button type="submit" onclick="return validarform()">Enviar Formulário</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        function funcSim() {
+            document.getElementById("numpassaporte").style.display = "block";
+        } 
+    
+        function funcNao() {
+            document.getElementById("numpassaporte").style.display = "none";
+        } 
+    </script>
+
+    <script src="js/vendor/maskJS.js"></script> 
+    <script src="js/trabalho.js"></script>
+    <script src="js/validar.js"></script>
+    
+</body>
+</html>
